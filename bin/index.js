@@ -12,7 +12,7 @@ const runCommand = (command) => {
 };
 
 const repoName = process.argv[2];
-const gitCheckoutCommand = `git clone https://github.com/br14nn/next-ts-template.git ${repoName}`;
+const gitCheckoutCommand = `npm update -g create-next-ts-template && git clone https://github.com/br14nn/next-ts-template.git ${repoName}`;
 const installDepsCommand = `cd ${repoName} && git remote remove origin && npm i`;
 
 console.log(`Cloning the repository with name ${repoName}`);
